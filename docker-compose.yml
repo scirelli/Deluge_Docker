@@ -12,7 +12,7 @@ services:
     volumes:
       - /home/scirelli/.config/deluge:/config
       - /media/Data5/deluge/downloads:/downloads
-      - /var/local/deluge/torrents:/torrents
+      - /home/scirelli/Project/Steve/Deluge_Docker/deluge_volumes/torrents:/torrents
     ports:
       - 8112:8112
       - 6881:6881
