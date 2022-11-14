@@ -6,13 +6,12 @@ services:
     container_name: deluge
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=1003
       - TZ=America/New_York
       - DELUGE_LOGLEVEL=error #optional
     volumes:
       - /home/scirelli/.config/deluge:/config
       - /media/Data5/deluge/downloads:/downloads
-      - /home/scirelli/Project/Steve/Deluge_Docker/deluge_volumes/torrents:/torrents
     ports:
       - 8112:8112
       - 6881:6881
